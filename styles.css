@@ -1,0 +1,27 @@
+body {
+    height: 100vh;
+    overflow-y: hidden;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#grid-container {
+    display: grid;
+    grid-auto-flow: column;
+    height: 960px;
+    width: 960px;
+    border: thick double #32a1ce;
+
+}
+
+.column {
+    max-height: 960px;
+    width: auto;
+}
+
+.row {
+    height: 56.47px;
+}
