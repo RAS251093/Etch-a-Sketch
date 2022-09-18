@@ -3,25 +3,17 @@ body {
     overflow-y: hidden;
     margin: 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 
 #grid-container {
     display: grid;
-    grid-auto-flow: column;
     height: 960px;
     width: 960px;
     border: thick double #32a1ce;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
 
-}
-
-.column {
-    max-height: 960px;
-    width: auto;
-}
-
-.row {
-    height: 56.47px;
 }
