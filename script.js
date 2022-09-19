@@ -30,10 +30,16 @@ function deleteGrid() {
 }
 
 function userPrompt() {
-    gridSize = prompt("Please enter a desired grid size less than 100.");
+    gridSize = prompt("Please enter a desired grid size (max = 100).");
 
     if (gridSize > 100) {
         alert("Grid size greater than 100, try again.");
+        return;
+    } else if (gridSize === null || gridSize <= 0 || !(gridSize % 1 === 0)) {
+        alert("Grid size must be a positive integer, try again.");
+        deleteGrid();
+        createGrid(16);
+        currentSize(16);
         return;
     }
 
