@@ -41,11 +41,11 @@ function userPrompt() {
         createGrid(16);
         currentSize(16);
         return;
+    } else {
+        deleteGrid();
+        createGrid(gridSize);
+        currentSize(gridSize);
     }
-
-    deleteGrid();
-    createGrid(gridSize);
-    currentSize(gridSize);
 }
 
 createGrid(gridSize);
